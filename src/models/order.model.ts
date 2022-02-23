@@ -1,5 +1,5 @@
 import mongoose, { model, Document, Schema } from "mongoose";
-import { IOrderItem, IShippingAddress } from "dtos/order.dtos";
+import { IOrderItem, IShippingAddress } from "../dtos/order.dtos";
 import { IUser } from "./user.model";
 
 export interface IOrder extends Document {

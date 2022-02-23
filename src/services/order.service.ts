@@ -1,5 +1,5 @@
-import { OrderDto, UpdateOrderPayDto } from "dtos/order.dtos";
-import Order, { IOrder } from "models/order.model";
+import { OrderDto, UpdateOrderPayDto } from "../dtos/order.dtos";
+import Order, { IOrder } from "../models/order.model";
 import { isValidObjectId } from "mongoose";
 
 const addOrderItems = async (orderDto: OrderDto, id: string) => {

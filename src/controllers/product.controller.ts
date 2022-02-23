@@ -1,5 +1,5 @@
 import { Response, Request } from "express";
-import { ProductService } from "services";
+import { ProductService } from "../services";
 
 const getAllProducts = async (req: Request, res: Response) => {
   const pageSize = 6;

@@ -1,6 +1,6 @@
-import { ProductController } from "controllers";
+import { ProductController } from "../controllers";
 import { Router } from "express";
-import { validateJwt, validateIsAdmin } from "middlewares";
+import { validateJwt, validateIsAdmin } from "../middlewares";
 const router = Router();
 router.get("/top", ProductController.getTopProducts);
 router.get("/", ProductController.getAllProducts);

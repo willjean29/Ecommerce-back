@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { AuthService } from "services";
+import { AuthService } from "../services";
 
 const signIn = async (req: Request, res: Response) => {
   const auth = await AuthService.signIn(req.body);

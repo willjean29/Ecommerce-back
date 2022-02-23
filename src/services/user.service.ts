@@ -1,5 +1,5 @@
-import { UpdateUserDto } from "dtos/user.dtos";
-import User, { IUser } from "models/user.model";
+import { UpdateUserDto } from "../dtos/user.dtos";
+import User, { IUser } from "../models/user.model";
 import { isValidObjectId } from "mongoose";
 const updateUser = async (updateUserDto: UpdateUserDto, id: string) => {
   try {

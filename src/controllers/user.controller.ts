@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { UserService } from "services";
+import { UserService } from "../services";
 
 const updateUser = async (req: Request, res: Response) => {
   //@ts-ignore

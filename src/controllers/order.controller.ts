@@ -1,6 +1,5 @@
-import { OrderController } from "controllers";
 import { Request, Response } from "express";
-import { OrderService } from "services";
+import { OrderService } from "../services";
 const addOrderItems = async (req: Request, res: Response) => {
   //@ts-ignore
   const id = req.user._id;

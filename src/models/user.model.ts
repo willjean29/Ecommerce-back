@@ -1,6 +1,6 @@
 import mongoose, { model, Document, Schema } from "mongoose";
 import bcrypt from "bcrypt";
-import User from "models/user.model";
+
 export interface IUser extends Document {
   name: string;
   email: string;

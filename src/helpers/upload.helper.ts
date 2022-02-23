@@ -1,5 +1,5 @@
-import User from "models/user.model";
-import Product from "models/product.model";
+import User from "../models/user.model";
+import Product from "../models/product.model";
 
 const DB_MODELS = {
   products: Product,

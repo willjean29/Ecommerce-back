@@ -1,6 +1,6 @@
 import { isValidObjectId } from "mongoose";
-import Product, { IProduct } from "models/product.model";
-import { ProductDto, ReviewDto } from "dtos/products.dtos";
+import Product, { IProduct } from "../models/product.model";
+import { ProductDto, ReviewDto } from "../dtos/products.dtos";
 
 const getAllProducts = async (keyword: string, page: number, limit: number) => {
   try {

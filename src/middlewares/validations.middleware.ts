@@ -1,5 +1,5 @@
 import { Response, Request, NextFunction } from "express";
-import { COLLECTIONS } from "utils/enums";
+import { COLLECTIONS } from "../utils/enums";
 const isValidCollection = (req: Request, res: Response, next: NextFunction) => {
   const { collection } = req.params;
   const validCollections = Object.values(COLLECTIONS) as string[];

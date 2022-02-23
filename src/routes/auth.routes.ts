@@ -1,5 +1,5 @@
-import { AuthController } from "controllers";
-import { validateJwt } from "middlewares";
+import { AuthController } from "../controllers";
+import { validateJwt } from "../middlewares";
 import { Router } from "express";
 
 const router = Router();

@@ -1,5 +1,5 @@
 import mongoose, { ConnectOptions } from "mongoose";
-import ENV from "utils/enviroments";
+import ENV from "../utils/enviroments";
 class Connection {
   private connection;
   constructor() {

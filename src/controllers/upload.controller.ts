@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { selectModel } from "helpers/upload.helper";
-import cloudinary from "config/cloudinary";
+import { selectModel } from "../helpers/upload.helper";
+import cloudinary from "../config/cloudinary";
 const uploadImage = async (req: Request, res: Response) => {
   const { collection, id } = req.params;
   const model = selectModel(collection);

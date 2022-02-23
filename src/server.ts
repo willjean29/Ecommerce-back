@@ -1,10 +1,9 @@
 import express, { Response, Request, NextFunction } from "express";
 import cors from "cors";
-import Connection from "database/connection";
-import routes from "routes";
-import ENV from "utils/enviroments";
-import { notFound, errorHandler } from "middlewares";
-import { sortAndDeduplicateDiagnostics } from "typescript";
+import Connection from "./database/connection";
+import routes from "./routes";
+import ENV from "./utils/enviroments";
+import { notFound, errorHandler } from "./middlewares";
 
 class LoginException extends Error {
   meta: string;

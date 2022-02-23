@@ -1,15 +1,14 @@
 import { NextFunction, Request, Response } from "express";
-import User, { IUser } from "models/user.model";
 import jwt from "jsonwebtoken";
-import ENV from "utils/enviroments";
+import User, { IUser } from "../models/user.model";
+import ENV from "../utils/enviroments";
 export interface JwtPayload {
   payload: string;
   iat: number;
   exp: number;
 }
 const validateJwt = async (req: Request, res: Response, next: NextFunction) => {
-  let existToken =
-    req.headers.authorization && req.headers.authorization.startsWith("Bearer");
+  let existToken = req.headers.authorization && req.headers.authorization.startsWith("Bearer");
   if (!existToken) {
     return res.status(401).json({
       success: false,
