@@ -1,0 +1,12 @@
+import { ProductController } from "controllers";
+import { Router } from "express";
+import { validateJwt, validateIsAdmin } from "middlewares";
+const router = Router();
+router.get("/top", ProductController.getTopProducts);
+router.get("/", ProductController.getAllProducts);
+router.get("/:id", ProductController.getProductById);
+router.post("/", validateJwt, validateIsAdmin, ProductController.createProduct);
+router.put("/:id", validateJwt, validateIsAdmin, ProductController.updateProductById);
+router.delete("/:id", validateJwt, validateIsAdmin, ProductController.deleteProductById);
+router.post("/:id/review", validateJwt, ProductController.createProductReview);
+export default router;
